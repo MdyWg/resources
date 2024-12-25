@@ -1,0 +1,15 @@
+import numpy as np
+
+a = np.array([1, 2, 3])
+b = np.expand_dims(a, axis = 1)
+print(b.shape)
+
+c = np.array([[1, 2], [3, 4], [5,6]])
+d = c[np.newaxis, :]
+e = c[:, np.newaxis]
+print(d) #row
+
+print(e) #column
+
+"""For array in second dimension, newaxis for d = third dimension array with all 3 elements while newaxis for e = third dimension array 
+with extra dimension added to each element"""
